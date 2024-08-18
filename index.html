@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test</title>
+</head>
+<body>
+    <header class="header">
+        <div class="page-wrapper">
+            <nav class="header__nav">
+                <img class="header__logo" src="img/logo.svg" alt="Логотип">
+                <button class="header__phone"><img src="img/button_phone.svg" alt="кнопка телефона"></button>
+                <button class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="header__line"></div>
+                <ul class="nav__list">
+                    <li class="nav__item">Американский стоматологический центр</li>
+                    <li class="nav__item">
+                        <div class="nav__map">
+                            <img src="img/header-map.png" alt="">
+                        </div>
+                        <address>г. Москва, ул. Перерва д. 39</address>
+                    </li>
+                    <li class="nav__item nav__btn-phone">
+                        <button>
+                            <div class="nav__btn-icon">
+                                <img src="img/nav-btn-phone.svg" alt="">
+                            </div>
+                            <div class="nav__btn-in">
+                                <p class="nav__btn-num">+7 985 <span class="text-red">535 76 66</span></p>
+                                <div>
+                                    <div class="nav__btn-circle"></div>
+                                    <p class="nav__btn-text">Звоните в любое время</p>
+                                </div>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <section class="about">
+                <div>
+                    <h1><span class="text-red">АМЕРИКАНСКИЙ</span> СТОМАТОЛОГИЧЕСКИЙ ЦЕНТР «ДАНТИСТ»</h1>
+                    <p class="about__desc about__block"><strong>Обратившись к нам, Вы можете быть уверены,
+                        что Вас обслужат <span class="text-red">на высшем уровне,</span></strong>
+                        и все Ваши проблемы с зубами останутся в прошлом.
+                    </p>
+                    <a class="about__button sign-up-btn about__block" href="#">Записаться на прием</a>
+                    <ul class="about__list about__block"> 
+                        <li class="about__item">
+                            <div class="about__tooth">
+                                <img src="img/zub.svg" alt="Зуб" width="27.54" height="27.54">
+                            </div>
+                            <div class="about__item-wrapper">
+                                <h3>Имплантация передних зубов</h3>
+                                <p>Передние зубы представлены резцами и клыками. Отличительной особенностью...</p>
+                                <a class="read-completely" href="#">Читать полностью</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__picture">
+                    <div class="about__background-circle">
+                        <div class="about__circle-1"></div>
+                        <div class="about__circle-2"></div>
+                        <div class="about__circle-3"></div>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 1280px)" srcset="img/about__background-photo-desk.png">
+                        <img class="about__background-photo" src="img/about__back.png" alt="">
+                    </picture>
+                    <div class="about__top">
+                        <p>топ</p>
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="img/5-desk.svg">
+                            <img class="about__background-five" src="img/5.svg" alt="">
+                        </picture>
+                    </div>
+                    <div class="about__rating">
+                        <ul class="about__rating-list">
+                            <li><img src="img/star.svg" alt=""></li>
+                            <li><img src="img/star.svg" alt=""></li>
+                            <li><img src="img/star.svg" alt=""></li>
+                        </ul>
+                        <p>в рейтинге клиник</p>
+                    </div>
+                    <div class="about__dir">
+                        <div class="about__name">
+                            <span>Бабаян Давид</span>
+                            <div>
+                                <img src="img/about-name.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="about__post">главный врач клиники</p>
+                    </div>
+                    <div class="about__quote">
+                        <div class="about__quote-wrapper">
+                            <div>Наши клиника скорее</div>
+                            <div>гостеприимный дом,</div>
+                            <div>чем официальное медицинское учреждение</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main class="main">
+        <div class="page-wrapper">
+            <section class="services">
+                <div class="main__title-block">
+                    <h2>Наши услуги</h2>
+                </div>
+                <h3 class="services__desc section__desc">Мы предлагаем <span class="text-red">полное медицинское обслуживание</span> людям с различными проблемами со здоровьем</h3>
+                <div class="services__slider swiper">
+                    <ul class="swiper-wrapper services__list">
+                        <li class="swiper-slide services__item">
+                            <div class="services__item-img">
+                                <img class="services__item-img-tooth" src="img/zub-1.png" alt="">
+                                <img class="services__item-img-back" src="img/background-services-item.png" alt="">
+                            </div>
+                            <div class="services__item-wrapper">
+                                <h4>Лечение зубов</h4>
+                                <p>Залог здоровья зубов – своевременное лечение 
+                                    у стоматолога. Важно обратиться в клинику...</p>
+                                <div class="services__item-link">
+                                    <a class="services__item-btn sign-up-btn">Записаться</a>
+                                    <a class="read-completely" href="#">Читать полностью</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide services__item">
+                            <div class="services__item-img">
+                                <img class="services__item-img-tooth" src="img/zub-1.png" alt="">
+                                <img class="services__item-img-back" src="img/background-services-item.png" alt="">
+                            </div>
+                            <div class="services__item-wrapper">
+                                <h4>Лечение зубов</h4>
+                                <p>Залог здоровья зубов – своевременное лечение 
+                                    у стоматолога. Важно обратиться в клинику...</p>
+                                <div class="services__item-link">
+                                    <a class="services__item-btn sign-up-btn">Записаться</a>
+                                    <a class="read-completely" href="#">Читать полностью</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide services__item">
+                            <div class="services__item-img">
+                                <img class="services__item-img-tooth" src="img/zub-1.png" alt="">
+                                <img class="services__item-img-back" src="img/background-services-item.png" alt="">
+                            </div>
+                            <div class="services__item-wrapper">
+                                <h4>Лечение зубов</h4>
+                                <p>Залог здоровья зубов – своевременное лечение 
+                                    у стоматолога. Важно обратиться в клинику...</p>
+                                <div class="services__item-link">
+                                    <a class="services__item-btn sign-up-btn">Записаться</a>
+                                    <a class="read-completely" href="#">Читать полностью</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide services__item">
+                            <div class="services__item-img">
+                                <img class="services__item-img-tooth" src="img/zub-1.png" alt="">
+                                <img class="services__item-img-back" src="img/background-services-item.png" alt="">
+                            </div>
+                            <div class="services__item-wrapper">
+                                <h4>Лечение зубов</h4>
+                                <p>Залог здоровья зубов – своевременное лечение 
+                                    у стоматолога. Важно обратиться в клинику...</p>
+                                <div class="services__item-link">
+                                    <a class="services__item-btn sign-up-btn">Записаться</a>
+                                    <a class="read-completely" href="#">Читать полностью</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-container">
+                        <div class="swiper-button swiper-btn-prev">
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="img/angle.svg">
+                                <img src="img/angle-mob.svg" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-button swiper-btn-next">
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="img/angle.svg">
+                                <img src="img/angle-mob.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clinic">
+                <div class="clinic__text">
+                    <div class="main__title-block">
+                        <h2>Наша клиника</h2>
+                    </div>
+                    <h3 class="clinic__desc section__desc"><span class="text-red">«Цена под ключ»</span>
+                        Мы работаем по удобной пациентам системе
+                    </h3>
+                    <div class="clinic__text__wrapper">
+                        <p class="clinic__text-p">Для нас очень важно, чтобы пациент<br> 
+                            до начала лечения понимал какой будет итоговая сумма за все лечение, 
+                            без подводных камней и необоснованных доплат. </p>
+                            
+                            <p class="clinic__text-p--hidden">Для этого мы сделали простой и понятный прайс-лист.<br> 
+                            Дантист — одна из немногих клиник в Москве, которая <br> 
+                            может предложить высокий профессионализм врачей, <br> 
+                            самые современные, безопасные материалы <br> 
+                            и демократичные цены.</p>
+                    </div>
+                </div>
+                <div class="clinic__dir">
+                    <div class="clinic__dir-wrapper">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="img/dir-desk.png">
+                            <img class="clinic__photo-dir" src="img/dir.png" alt="Фотография директора клиники">
+                        </picture>
+                        <img class="clinic__signa" src="img/signa.png" alt="Подпись директора">
+                        <p class="clinic__name"><span class="text-red">Бабаян</span><br>
+                            Давид
+                        </p>
+                        <p class="clinic__post">Главный врач</p>
+                        <a class="sign-up-btn" href="#">Записаться на прием</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="page-wrapper-two">
+            <section class="doctors">
+                <div class="doctors__wrapper">
+                    <div class="main__title-block">
+                        <h2>Наши специалисты</h2>
+                    </div>
+                    <div class="doctors__text">
+                        <h3 class="doctors__desc section__desc"><span class="text-red">Познакомьтесь</span><br> с нашими <strong>врачами</strong></h3>
+                        <p>Наш административный и вспомогательный персонал <strong>обладает всеми необходимыми навыками работы с людьми</strong> и обучен, чтобы помочь вам со всеми медицинскими вопросами</p>
+                    </div>
+                    <div class="doctors__slider swiper">
+                        <ul class="swiper-wrapper doctors__list">
+                            <li class="swiper-slide doctors__item">
+                                <div class="doctors__img">
+                                    <img src="img/doc1.png" alt="Фото доктора" width="128" height="128">
+                                </div>
+                                <div class="doctors__text-wrapper">
+                                    <h4>Арзумаров Амаяк Аркадьевич</h4>
+                                    <p class="doctors__post">Врач-стоматолог ортопед, гнатолог</p>
+                                    <p class="doctors__reg">Ведущий специалист клиники по съемному и несъемному протезированию</p>
+                                    <a href="#">Подробнее <img src="img/strelka.svg" alt="" width="12.43" height="12.43"></a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide doctors__item">
+                                <div class="doctors__img">
+                                    <img src="img/doc2.png" alt="Фото доктора" width="128" height="128">
+                                </div>
+                                <div class="doctors__text-wrapper">
+                                    <h4>Жвания Нала Анзоровна</h4>
+                                    <p class="doctors__post">Врач-стоматолог ортодонт</p>
+                                    <p class="doctors__reg">Специалист по ортодонтическому лечению на всех видах брекет-систем взрослых и детей с 12 лет</p>
+                                    <a href="#">Подробнее <img src="img/strelka.svg" alt="" width="12.43" height="12.43"></a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide doctors__item">
+                                <div class="doctors__img">
+                                    <img src="img/doc3.png" alt="Фото доктора" width="128" height="128">
+                                </div>
+                                <div class="doctors__text-wrapper">
+                                    <h4>Арзуманов Андраник Аркадьевич</h4>
+                                    <p class="doctors__post">Врач-стоматолог ортодонт</p>
+                                    <p class="doctors__reg">Специалист по ортодонтическому лечению на брекет-системах и элайнерах</p>
+                                    <a href="#">Подробнее <img src="img/strelka.svg" alt="" width="12.43" height="12.43"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="doctors__swiper-btns-container">
+                        <div class="doctors-swiper-button doctors-swiper-btn-prev">
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="img/angle.svg">
+                                <img src="img/angle-mob.svg" alt="">
+                            </picture>
+                        </div>
+                        <div class="doctors-swiper-button doctors-swiper-btn-next">
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="img/angle.svg">
+                                <img src="img/angle-mob.svg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <button class="doctors__download">Загрузить еще</button>
+                </div>
+            </section>
+            <section class="concept">
+                <div class="concept__img">
+                    <img class="concept__girl" src="img/girl-elipce.png" alt="">
+                    <div class="concept__circle circle-back-1"></div>
+                    <div class="concept__circle circle-back-2"></div>
+                    <div class="concept__circle circle-back-3"></div>
+                    <img class="concept__star star-back-1" src="img/concept-star.png" alt="">
+                    <img class="concept__star star-back-2" src="img/concept-star.png" alt="">
+                    <img class="concept__star star-back-3" src="img/concept-star.png" alt="">
+                    <img class="concept__star star-back-4" src="img/concept-star.png" alt="">
+                    <img class="concept__star star-back-5" src="img/concept-star.png" alt="">
+                </div>
+                <div class="concept__block">
+                    <div class="main__title-block">
+                        <h2>Наши принципы</h2>
+                    </div>
+                    <h3 class="concept__desc section__desc">Улучшите <strong><span class="text-red">качество вашей жизни,</span> благодаря лучшему здоровью</strong></h3>
+                    <ul class="concept__list">
+                        <li class="concept__item">
+                            <div class="concept__item-img">
+                                <picture>
+                                    <source media="(min-width: 1280px)" srcset="img/concept-1-desk.svg">
+                                    <img src="img/concept-1.svg" alt="">
+                                </picture>
+                            </div>
+                            <div class="concept__item-container">
+                                <strong>Во главе всего стоит пациент</strong> и его здоровье — это главное правило нашего центра.
+                            </div>
+                        </li>
+                        <li class="concept__item">
+                            <div class="concept__item-img">
+                                <picture>
+                                    <source media="(min-width: 1280px)" srcset="img/concept-2-desk.svg">
+                                    <img src="img/concept-2.svg" alt="">
+                                </picture>
+                            </div>
+                            <div class="concept__item-container">
+                                Качественные услуги стоматологической клиники — <strong>это лишь малая часть того, что мы можем предложить</strong> нашим пациентам
+                            </div> 
+                        </li>
+                        <li class="concept__item">
+                            <div class="concept__item-img">
+                                <picture>
+                                    <source media="(min-width: 1280px)" srcset="img/concept-3-desk.svg">
+                                    <img src="img/concept-3.svg" alt="">
+                                </picture>
+                            </div>
+                            <div class="concept__item-container">
+                                <strong>Все работы наших докторов разбираются на консилиуме</strong> стоматологов с подробностями  Вашей клинической ситуации
+                            </div>
+                        </li>
+                        <li class="concept__item">
+                            <div class="concept__item-img">
+                                <picture>
+                                    <source media="(min-width: 1280px)" srcset="img/concept-4-desk.svg">
+                                    <img src="img/concept-4.svg" alt="">
+                                </picture>
+                            </div>
+                            <div class="concept__item-container">
+                                <strong>Два уровня проверки стерилизации</strong> и учет всей документации о стерилизации позволяют нам уверенно проводить все манипуляции
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="sign-up-btn" href="#">Записаться на прием</a>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="reviews__wrapper">
+                    <div class="main__title-block">
+                        <h2>Отзывы</h2>
+                    </div>
+                    <h3 class="reviews__desc section__desc"><span class="text-red">Вдохновляющие</span> истории</h3>
+                    <div class="reviews__buttons">
+                        <button class="reviews__btn reviews__btn-all">Все</button>
+                        <button class="reviews__btn">Читать отзывы</button>
+                        <button class="reviews__btn reviews__btn--active">Смотреть отзывы</button>
+                    </div>
+                    <div class="reviews__video-container">
+                        <ul class="reviews__list-video">
+                            <li class="reviews__item-video">
+                                <picture>
+                                    <source media="(min-width: 1280px)" srcset="img/play-desktop.svg">
+                                    <img class="reviews__play" src="img/play.svg" alt="">
+                                </picture>
+                                <img class="reviews__video" src="img/priew.png" alt="">
+                            </li>
+                            <li class="reviews__item-video reviews__item-video--hidden">
+                                <picture>
+                                    <source media="(min-width: 1280px)" srcset="img/play-desktop.svg">
+                                    <img class="reviews__play" src="img/play.svg" alt="">
+                                </picture>
+                                <img class="reviews__video" src="img/priew.png" alt="">
+                            </li>
+                            <li class="reviews__item-video reviews__item-video--hidden">
+                                <picture>
+                                    <source media="(min-width: 1280px)" srcset="img/play-desktop.svg">
+                                    <img class="reviews__play" src="img/play.svg" alt="">
+                                </picture>
+                                <img class="reviews__video" src="img/priew.png" alt="">
+                            </li>
+                        </ul>
+                        <ul class="reviews__list-choice">
+                            <li class="reviews__item-choice reviews__item-choice--active">
+                                <div>
+                                    <img src="img/avatar.png" alt="">
+                                </div>
+                                <p>Алена <br> <span>г. Москва</span></p>
+                            </li>
+                            <li class="reviews__item-choice">
+                                <div>
+                                    <img src="img/avatar.png" alt="">
+                                </div>
+                                <p>Алена <br> <span>г. Москва</span></p>
+                            </li>
+                            <li class="reviews__item-choice">
+                                <div>
+                                    <img src="img/avatar.png" alt="">
+                                </div>
+                                <p>Алена <br> <span>г. Москва</span></p>
+                            </li>
+                            <li class="reviews__item-choice">
+                                <div>
+                                    <img src="img/avatar.png" alt="">
+                                </div>
+                                <p>Алена <br> <span>г. Москва</span></p>
+                            </li>
+                            <li class="reviews__item-choice">
+                                <div>
+                                    <img src="img/avatar.png" alt="">
+                                </div>
+                                <p>Алена <br> <span>г. Москва</span></p>
+                            </li>
+                            <li class="reviews__item-choice">
+                                <div>
+                                    <img src="img/avatar.png" alt="">
+                                </div>
+                                <p>Алена <br> <span>г. Москва</span></p>
+                            </li>
+                        </ul>
+                        <button class="reviews__load"><span>Загрузить еще</span><img src="img/loading.svg" alt="" width="14" height="14"></button>
+                    </div>
+                    <h4 class="reviews__portals-title">Отзывы о клинике на популярных порталах</h4>
+                    <ul class="reviews__portals-list">
+                        <li class="reviews__portals-item">
+                            <img src="img/y.png" alt="" width="27.01" height="25.01">
+                        </li>
+                        <li class="reviews__portals-item">
+                            <img src="img/review-tooth.svg" alt="" width="27.01" height="25.01">
+                        </li>
+                        <li class="reviews__portals-item">
+                            <img src="img/32top.svg" alt="" width="40.68" height="13.34">
+                        </li>
+                        <li class="reviews__portals-item">
+                            <img src="img/doubl.png" alt="" width="27.01" height="25.01">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="page-wrapper">
+            <section class="licenses">
+                <div class="licenses__wrapper">
+                    <div class="main__title-block">
+                        <h2>Лицензии</h2>
+                    </div>
+                    <h3 class="licenses__desc section__desc"><span class="text-red">Подтверждаем</span><br> 
+                        свою <strong>квалификацию</strong>
+                    </h3>
+                    <p class="licenses__text licenses__block">Деятельность центра <strong>направлена не только на восстановление жевательной функцию зубов,</strong> а и на обеспечение в полной мере их эстетики.</p>
+                    <ul class="licenses__list licenses__block">
+                        <li class="licenses__item">
+                            <img src="img/+.svg" alt="" width="8" height="9">
+                            <p>ООО "СТОМАТОЛОГИЧЕСКАЯ <br>ФИРМА «ОРТОСТОМ ЛЮКС» <br>ИНН 7723502220 <br>ОГРН 1027739047390</p>
+                        </li>
+                        <li class="licenses__item">
+                            <img src="img/+.svg" alt="" width="8" height="9">
+                            <p>Юридический адрес: 109341, город Москва, <br> ул. Перерва, д. 39</p>
+                        </li>
+                    </ul>
+                    <a class="sign-up-btn licenses__block" href="#">Записаться на прием</a>
+                </div>
+                <div class="licenses__image">
+                    <div class="licenses__image-container">
+                        <img class="licenses__image-lic" src="img/licenses.png" alt="">
+                        <a href="#">
+                            <img class="licenses__icon-search" src="img/search.svg" alt="" width="14" height="14">
+                            <span>Посмотреть все лицензии клиники</span>
+                        </a>
+                        <div class="licenses__circle licenses__circle-1"></div>
+                        <div class="licenses__circle licenses__circle-2"></div>
+                        <div class="licenses__circle licenses__circle-3"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <h3 class="footer__title section__desc"><span class="text-red">Удобное</span> расположение</h3>
+            <p class="footer__text">Деятельность центра <strong>направлена не только на восстановление жевательной функцию зубов,</strong> а и на обеспечение в полной мере их эстетики.</p>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <img src="img/icon-address.svg" alt="">
+                    <p>г. Москва, м. Братиславская,<br> <strong>ул. Перерва, д. 39</strong>, 2 этаж</p>
+                </li>
+                <li class="footer__item">
+                    <img src="img/icon-phone.svg" alt="">
+                    <p><span>Звоните <span class="visual-gidden-1">нам</span> в любое время</span> <br><strong>+7 499 394 60 30</strong></p>
+                </li>
+                <li class="footer__item">
+                    <img src="img/icon-wa.svg" alt="">
+                    <p>Напишите нам в <strong>WhatsApp</strong> <span class="visual-gidden-1">по любым вопросам</span></p>
+                </li>
+                <li class="footer__item">
+                    <img src="img/icon-time.svg" alt="">
+                    <p class="visual-gidden-1">Будни 09:00—21:00 Выходные 10:00—20:00</p>
+                    <p class="visual-gidden-2">Пн-Пт 09:00—21:00 <br>
+                        Сб-Вс 10:00—20:00</p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__picture">
+            <picture>
+                <source media="(min-width: 1280px)" srcset="img/footer-map-desk.png">
+                <img class="footer__map" src="img/map.jpg" alt="Карта">
+            </picture>
+        </div>
+        <div class="page-footer__wrapper">
+            <div class="footer__down">
+                <div class="footer__phone">
+                    <img class="footer__logo" src="img/logo.svg" alt="Логотип" width="89" height="25">
+                    <a href="#"><img src="img/footer-phone.svg" alt="" width="10" height="10"><span>+7 499 394 60 30</span></a>
+                </div>
+                <ul class="footer__list-link">
+                    <li class="footer__item-link">Полезные статьи</li>
+                    <li class="footer__item-link">Политика конфиденциальности</li>
+                    <li class="footer__item-link">Правовая информация</li>
+                    <li class="footer__item-link">Сертификаты сотрудников</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
